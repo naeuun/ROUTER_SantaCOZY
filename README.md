@@ -8,16 +8,16 @@
 | `main`                  | 최종 배포용 브랜치      |
 | `BACKEND`               | 백엔드 공용 작업 브랜치   |
 | `FRONTEND`              | 프론트엔드 공용 작업 브랜치 |
-| `fe/feature/기능명` | 프론트엔드 기능 개발 브랜치 |
-| `be/feature/기능명` | 백엔드 기능 개발 브랜치   |
+| `fe/이름` | 프론트엔드 각 팀원 기능 개발 브랜치 |
+| `be/이름` | 백엔드 각 팀원 기능 개발 브랜치   |
 | `fe/fix/세부사항`     | 프론트엔드 버그 수정 브랜치 |
 | `be/fix/세부사항`     | 백엔드 버그 수정 브랜치   |
 
 ### 📌 브랜치 이름 예시
 
 ```
-fe/feature/login-page
-be/feature/login
+fe/naeun
+be/fix/gemini
 fe/fix/button-color
 ```
 
@@ -127,14 +127,14 @@ fe/fix/button-color
    ```bash
    git checkout BACKEND   # 또는 FRONTEND
    git pull origin BACKEND
-   git checkout -b be/feature/기능명
+   git checkout -b be/이름
    ```
 3. **작업 & 커밋**
 
    ```bash
    git add .
    git commit -m "feat: 로그인 API 추가 "
-   git push origin be/feature/기능명
+   git push origin be/이름
    ```
 4. **PR 생성 및 리뷰** → `BACKEND` 또는 `FRONTEND` 브랜치로 PR
 5. **코드 리뷰 후 병합(Merge)**

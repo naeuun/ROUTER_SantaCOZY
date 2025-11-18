@@ -1,0 +1,12 @@
+{% extends 'santaCozy/base.html' %}
+
+{% block title %}결과{% endblock %}
+
+{% block content %}
+
+<h1>산타 코지의 답변..✨</h1>
+
+<p>{{ answer }}</p>
+
+<a href="{% url 'santaCozy:index' %}">돌아가기</a>
+{% endblock %}

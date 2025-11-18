@@ -3,5 +3,11 @@
 {% block title %}메인 페이지{% endblock %}
 
 {% block content %}
-<h1>Santa Cozy 메인</h1>
+<h1>🧑‍🎄 Santa Cozy 메인 🐭</h1>
+<form method="POST" action="{% url 'santaCozy:loading' %}">
+    {% csrf_token %}
+    <textarea name="worry" rows="5" cols="40" placeholder="고민을 입력하세요!"></textarea>
+    <br>
+    <button type="submit">제출</button>
+</form>
 {% endblock %}

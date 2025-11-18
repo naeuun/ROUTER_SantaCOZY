@@ -1,10 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from .utils import call_gemini_api
 
 def index(request):
     return render(request, 'santaCozy/index.html')
 
 def loading(request):
-    return render(request, 'santaCozy/loading.html')
+    if request.method == "POST":
+        worry = request.POST.get("worry")
+        return render(request, "santaCozy/loading.html", {"worry": worry})
 
 def result(request):
-    return render(request, 'santaCozy/result.html')
+    if request.method == "POST":
+        worry = request.POST.get("worry")
+        
+        answer = call_gemini_api(worry)
+
+        return render(request, "santaCozy/result.html", {
+            "answer": answer
+        })
+
+    return redirect("index")

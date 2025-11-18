@@ -7,16 +7,15 @@
 <h2>코지 산타는 생각 중...🧑‍🎄🐭</h2>
 <p>로딩중...</p>
 
-<script>
-    // 4초 후 자동으로 result로 POST
-    setTimeout(function() {
-        document.getElementById("loadingForm").submit();
-    }, 4000);
-</script>
-
 <form id="loadingForm" method="POST" action="{% url 'santaCozy:result' %}">
     {% csrf_token %}
     <input type="hidden" name="worry" value="{{ worry }}">
 </form>
+
+<script>
+    setTimeout(function() {
+        document.getElementById("loadingForm").submit();
+    }, 3000);
+</script>
 
 {% endblock %}

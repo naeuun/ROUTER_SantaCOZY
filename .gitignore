@@ -1,0 +1,54 @@
+# ---- Python / Django ----
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# 환경 설정
+.env
+*.env
+.env.*
+
+# Django stuff
+db.sqlite3
+media/
+staticfiles/
+
+# ---- Virtual environment ----
+venv/
+venv*/ 
+.env/
+myvenv/
+
+# ---- VSCode ----
+.vscode/
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
+
+# ---- Build / Bytecode ----
+*.pot
+*.pyc
+*.pyo
+*.orig
+
+# ---- Frontend (optional HTML/CSS/JS assets) ----
+node_modules/
+dist/
+build/
+
+# ---- Python packaging ----
+*.egg-info/
+*.egg
+.eggs/
+
+# ---- Cache ----
+*.cache
+.cache/
+

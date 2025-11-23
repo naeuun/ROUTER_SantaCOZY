@@ -3,11 +3,19 @@
 {% block title %}메인 페이지{% endblock %}
 
 {% block content %}
-<h1>🧑‍🎄 Santa Cozy 메인 🐭</h1>
-<form method="POST" action="{% url 'santaCozy:loading' %}">
-    {% csrf_token %}
-    <textarea name="worry" rows="5" cols="40" placeholder="고민을 입력하세요!"></textarea>
-    <br>
-    <button type="submit">제출</button>
-</form>
+<header></header>
+<main>
+    <h1>Santa Cozy</h1>
+    <form method="POST" action="{% url 'santaCozy:loading' %}">
+        {% csrf_token %}
+        <textarea name="worry" rows="5" cols="40" placeholder="코지에게 고민을 입력해보세요!"></textarea>
+        <br>
+        <button type="submit">제출</button>
+    </form>
+</main>
+<footer class="footer">
+    <div>
+        <p>Santa Cozy © 2025 — Developed by ROUTER</p>
+    </div>
+</footer>
 {% endblock %}

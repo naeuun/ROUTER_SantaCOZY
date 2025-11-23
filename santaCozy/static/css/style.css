@@ -40,6 +40,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    font-size: 15px;
     background-image: url('../img/background.png');
     background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
     background-size: cover; /* 비율 유지하며 화면 꽉 채우기 */
@@ -47,4 +48,38 @@ body {
     background-position: center center; /* 배경 이미지 가운데 정렬 */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem;
+    border-bottom: 0.5px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    padding: 0 1rem 2rem;
+    background-color: var(--footer-background);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 0.5px solid var(--border-color);
+}
+
+footer p {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-variation-settings: "wdth" 100;
 }

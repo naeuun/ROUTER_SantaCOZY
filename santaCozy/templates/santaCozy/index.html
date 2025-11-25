@@ -5,8 +5,9 @@
 {% block content %}
 
 <main class="wrapper">
-    <img class="bell" src="../../static/img/bell.png" alt="종 사진" width="111">
-    <div class="title"><h1><p class="Santa">Santa</p> <p class="Cozy">Cozy</p></h1></div>
+    {% load static %}
+    <img class="bell" src="{% static 'img/bell.png' %}" alt="종 사진" width="111">
+    <div class="title"><h1><span class="Santa">Santa</span> <span class="Cozy">Cozy</span></h1></div>
     <form class="form" method="POST" action="{% url 'santaCozy:loading' %}">
         {% csrf_token %}
         <textarea class="textarea" name="worry" rows="4" cols="50" placeholder="코지에게 고민을 입력해보세요!"></textarea>

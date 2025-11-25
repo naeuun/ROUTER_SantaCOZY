@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Santa Cozy{% endblock %}</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'santaCozy/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+MX:wght@100..400&family=Titan+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header></header>
     {% block content %}
     {% endblock %}
+    <footer class="footer">
+    <div>
+        <p>Santa Cozy © 2025 — Developed by ROUTER</p>
+    </div>
+</footer>
 </body>
 </html>

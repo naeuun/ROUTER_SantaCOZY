@@ -52,12 +52,17 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    position: relative;
 }
 
 header {
     padding: 2rem;
     border-bottom: 0.5px solid var(--border-color);
     margin-bottom: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 main {
@@ -74,6 +79,10 @@ footer {
     align-items: flex-start;
     justify-content: center;
     border-top: 0.5px solid var(--border-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer p {

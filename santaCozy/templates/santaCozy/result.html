@@ -4,9 +4,19 @@
 
 {% block content %}
 
-<h1>산타 코지의 답변..✨</h1>
+<div class="overlay">
+<main class="wrapper">
+    <div class="title"><h1><span class="Santa modal-santa">Santa</span> <span class="Cozy modal-cozy">Cozy</span></h1></div>
+    <div class="card-container">
+        <div class="card-content">
+            <p>{{ answer }}</p>
 
-<p>{{ answer }}</p>
+            {% load static %}
+            <img class="stamp" src="{% static 'img/stamp.png' %}" alt="코지 스탬프">
+        </div>
 
-<a href="{% url 'santaCozy:index' %}">돌아가기</a>
+        <a class="return" href="{% url 'santaCozy:index' %}">돌아가기</a>
+    </div>
+</main>
+</div>
 {% endblock %}

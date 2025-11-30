@@ -4,18 +4,23 @@
 
 {% block content %}
 
-<h2>코지 산타는 생각 중...🧑‍🎄🐭</h2>
-<p>로딩중...</p>
+<main class="wrapper">
 
-<form id="loadingForm" method="POST" action="{% url 'santaCozy:result' %}">
-    {% csrf_token %}
-    <input type="hidden" name="worry" value="{{ worry }}">
-</form>
+    {% load static %}
+    <img src="{% static 'img/movingCozy.gif' %}" alt="로딩 애니메이션" width="220">
 
-<script>
-    setTimeout(function() {
-        document.getElementById("loadingForm").submit();
-    }, 3000);
-</script>
+    <h2 class="loadingComment">코지가 고민을 읽어보고 있어요..</h2>
+
+    <form id="loadingForm" method="POST" action="{% url 'santaCozy:result' %}">
+        {% csrf_token %}
+        <input type="hidden" name="worry" value="{{ worry }}">
+    </form>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById("loadingForm").submit();
+        }, 3000);
+    </script>
+</main>
 
 {% endblock %}

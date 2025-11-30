@@ -19,4 +19,4 @@ def result(request):
             "answer": answer
         })
 
-    return redirect("index")
+    return redirect("santaCozy:index")

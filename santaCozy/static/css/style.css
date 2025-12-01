@@ -10,12 +10,6 @@
     --border-color: #808080;
     --vector-color: #FD9799;
 
-    /* 브레이크포인트 변수 */
-    --breakpoint-sm: 480px;   /* 모바일 */
-    --breakpoint-md: 768px;   /* 태블릿 */
-    --breakpoint-lg: 1024px;  /* 데스크톱 */
-    --breakpoint-xl: 1280px;  /* 대형 데스크톱 */
-
     /* 그림자 */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -69,7 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    padding: 10rem 1rem 1rem;
 }
 
 footer {

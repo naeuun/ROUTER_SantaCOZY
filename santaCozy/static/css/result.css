@@ -24,12 +24,13 @@
 }
 
 .card-container {
-    width: 100%;
-    height: 100%;
+    width: 85vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
     margin: 1rem;
     z-index: 100; /* 오버레이(99)보다 높게 설정 */
     position: relative;
@@ -43,7 +44,7 @@
     align-items: center;
     background-image: url('../img/letter.png');
     background-repeat: no-repeat; 
-    background-size: contain;
+    background-size: 100% auto;
     background-position: center center;
     width: 90%;
     min-height: 60vh;
@@ -57,9 +58,11 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-break: keep-all;
     color: var(--text-primary);
-    padding: 3rem;
+    padding: 1.5rem 2.5rem;
 }
 
 .return {
@@ -74,4 +77,40 @@
     padding: 0.5rem 3rem;
     text-decoration: none;
     border-radius: var(--radius-lg);
+}
+
+@media (min-width: 480px) {
+    
+    .card-container {
+        width: 60vw;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card-container {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .card-container {
+        width: 30vw;
+        height: 60vh;
+    }
+
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
 }

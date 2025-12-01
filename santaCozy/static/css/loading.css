@@ -2,6 +2,22 @@
     font-family: "Bagel Fat One", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+    .loadingComment {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding-top: 8rem;
+    }
+
+    .loadingComment {
+        font-size: 2rem;
+    }
 }

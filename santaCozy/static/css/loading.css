@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 1024px) {
-    .wrapper {
+    .loading-wrapper {
         padding-top: 8rem;
     }
 

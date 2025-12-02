@@ -55,6 +55,7 @@
 }
 
 .textarea {
+    width: 100%;
     border: none;
     resize: none;
     padding: 0.5rem 0 0.5rem 1rem;
@@ -149,7 +150,7 @@
 @media (min-width: 1024px) {
     .index-wrapper {
         padding-top: 4rem;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .form {
@@ -157,7 +158,24 @@
     }
 
     .santa-cozy {
-        width: 18rem;
+        width: 15rem;
+    }
+
+    .circle {
+        width: 20rem;
+        bottom: -1.5rem;
+        right: -2.5rem;
+    }
+}
+
+@media (min-height: 1366px) {
+    .index-wrapper {
+        padding-top: 10rem;
+        gap: 1rem;
+    }
+
+    .santa-cozy {
+        width: 22rem;
     }
 
     .circle {

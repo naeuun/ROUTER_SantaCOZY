@@ -64,6 +64,16 @@
     padding: 1.5rem 2.5rem;
 }
 
+/* 150자 초과일 때 */
+.card-content p.font-size-medium {
+    font-size: 0.9rem; 
+}
+
+/* 200자 초과일 때 */
+.card-content p.font-size-small {
+    font-size: 0.75rem;
+}
+
 .stamp {
     position: absolute;
     bottom: 3rem;
@@ -81,7 +91,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: var(--text-primary);
-    background-color: yellow;
+    background-color: #F9D769;
     padding: 0.5rem 3rem;
     text-decoration: none;
     border-radius: var(--radius-lg);
@@ -98,20 +108,14 @@
     }
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 1024px) {
     .card-content {
-        width: 60vw;
-    }
-
-    .card-content p {
-        font-size: 1rem;
+        width: 20vw;
     }
 }
 
-@media (min-width: 1024px) {
-
+@media (min-height: 1366px) {
     .card-content {
-        width: 30vw;
+        width: 50vw;
     }
 }

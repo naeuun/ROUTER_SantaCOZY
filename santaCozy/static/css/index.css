@@ -1,3 +1,7 @@
+.index-wrapper {
+    padding-top: 5rem;
+}
+
 .bell {
     margin-top: 1rem;
 }
@@ -94,7 +98,34 @@
     filter: brightness(85%);
 }
 
+.cozy-circle {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.santa-cozy {
+    z-index: 2000;
+    position: relative;
+}
+
+.circle {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: -1rem;
+    right: -2rem;
+    width: 20rem;
+    height: auto;
+    aspect-ratio: 4 / 1.5;
+    border-radius: 50% / 50%;
+    z-index: 1999;
+
+}
+
 @media (min-width: 768px) {
+    .index-wrapper {
+        padding-top: 10rem;
+    }
+
     .title > h1 {
         font-size: 4rem;
         width: 90vw;
@@ -103,14 +134,34 @@
     .form {
         width: 60vw;
     }
+
+    .santa-cozy {
+        width: 20rem;
+    }
+
+    .circle {
+        width: 30rem;
+        bottom: -3rem;
+        right: -4.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
     .index-wrapper {
+        padding-top: 4rem;
         gap: 1rem;
     }
 
     .form {
         width: 50vw;
+    }
+
+    .santa-cozy {
+        width: 18rem;
+    }
+
+    .circle {
+        width: 27rem;
+        bottom: -1.5rem;
     }
 }

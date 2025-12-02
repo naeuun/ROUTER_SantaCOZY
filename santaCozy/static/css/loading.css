@@ -21,3 +21,9 @@
         font-size: 2rem;
     }
 }
+
+@media (min-height: 1366px) {
+    .loading-wrapper {
+        padding-top: 20rem;
+    }
+}

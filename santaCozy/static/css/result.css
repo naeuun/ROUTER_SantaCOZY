@@ -112,6 +112,11 @@
     .card-content {
         width: 20vw;
     }
+
+    .stamp {
+        width: 2.5rem;
+        bottom: 2rem;
+    }
 }
 
 @media (min-height: 1366px) {

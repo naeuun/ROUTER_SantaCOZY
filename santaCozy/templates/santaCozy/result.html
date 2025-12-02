@@ -10,6 +10,8 @@
     <div class="card-container">
         <div class="card-content">
             <p>{{ answer }}</p>
+            {% load static %}
+            <img class="stamp" src="{% static 'img/cozyStamp.png' %}" alt="코지 스탬프">
         </div>
 
         <a class="return" href="{% url 'santaCozy:index' %}">돌아가기</a>

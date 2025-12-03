@@ -11,15 +11,17 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-
-# Connecting gemini API key from .env file
 import os
 from dotenv import load_dotenv
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# BASE_DIR 먼저 정의
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# 그 다음에 .env 파일 로드
 load_dotenv(BASE_DIR / ".env")
+
+# 마지막으로 환경 변수 읽기
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/

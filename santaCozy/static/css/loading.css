@@ -1,18 +1,32 @@
+.loadingCozy {
+    width: 50vw;
+}
+
 .loadingComment {
     font-family: "Bagel Fat One", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--text-muted);
 }
 
 @media (min-width: 768px) {
+
+    .loadingCozy {
+        width: 30vw;
+    }
+
     .loadingComment {
         font-size: 1.8rem;
     }
 }
 
 @media (min-width: 1024px) {
+
+    .loadingCozy {
+        width: 15vw;
+    }
+
     .loading-wrapper {
         padding-top: 8rem;
     }
@@ -23,6 +37,12 @@
 }
 
 @media (min-height: 1366px) {
+
+    .loadingCozy {
+        width: 40vw;
+        font-size: 1.6rem;
+    }
+
     .loading-wrapper {
         padding-top: 20rem;
     }

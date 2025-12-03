@@ -44,7 +44,7 @@
     background-repeat: no-repeat; 
     background-size: 100% auto;
     background-position: center center;
-    width: 90vw;
+    width: 75vw;
     min-height: auto;
     aspect-ratio: 3.1/4.4;
 }
@@ -76,9 +76,9 @@
 
 .stamp {
     position: absolute;
-    bottom: 3rem;
-    right: 3rem;
-    width: 3rem;
+    bottom: 2rem;
+    right: 2rem;
+    width: 2.5rem;
     height: auto;
     z-index: 200;
 }
@@ -108,6 +108,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    .stamp {
+        width: 3rem;
+        bottom: 3.5rem;
+        right: 3.5rem;
+    }
+}
+
 @media (min-width: 1024px) {
     .card-content {
         width: 20vw;
@@ -116,11 +124,18 @@
     .stamp {
         width: 2.5rem;
         bottom: 2rem;
+        right: 2rem;
     }
 }
 
 @media (min-height: 1366px) {
     .card-content {
         width: 50vw;
+    }
+
+    .stamp {
+        width: 3rem;
+        bottom: 3.5rem;
+        right: 3.5rem;
     }
 }

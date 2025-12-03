@@ -4,9 +4,32 @@
 
 {% block content %}
 
-<h1>산타 코지의 답변..✨</h1>
+<div class="overlay">
+<main class="wrapper result-wrapper">
+    <div class="title"><h1><span class="Santa modal-santa">Santa</span> <span class="Cozy modal-cozy">Cozy</span></h1></div>
+    <div class="card-container">
+        <div class="card-content">
+            <p id="answer">{{ answer }}</p>
+            {% load static %}
+            <img class="stamp" src="{% static 'img/cozyStamp.png' %}" alt="코지 스탬프">
+        </div>
 
-<p>{{ answer }}</p>
+        <a class="return" href="{% url 'santaCozy:index' %}">돌아가기</a>
+    </div>
+</main>
+</div>
 
-<a href="{% url 'santaCozy:index' %}">돌아가기</a>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const answerElement = document.getElementById('answer');
+        const textLength = answerElement.textContent.length;
+        
+        if (textLength > 150) {
+            answerElement.classList.add('font-size-medium');
+        } 
+        else if (textLength > 200) {
+            answerElement.classList.add('font-size-small');
+        } 
+    });
+</script>
 {% endblock %}

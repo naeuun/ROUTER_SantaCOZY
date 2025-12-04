@@ -3,7 +3,7 @@
 }
 
 .bell {
-    width: 20vw;
+    width: 5rem;
     height: auto;
     margin-top: 1rem;
 }
@@ -106,7 +106,7 @@
 .cozy-circle {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 10rem;
     position: relative;
     margin-top: 1rem;
 }
@@ -122,8 +122,8 @@
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     bottom: -1rem;
-    right: -2rem;
-    width: 55vw;
+    right: -2.5rem;
+    width: 15rem;
     height: auto;
     aspect-ratio: 4 / 1.5;
     border-radius: 50% / 50%;
@@ -134,7 +134,7 @@
 @media (min-width: 768px) {
 
     .bell {
-        width: 15vw;
+        width: 7rem;
     }
 
     .index-wrapper {
@@ -151,20 +151,17 @@
     }
 
     .cozy-circle {
-        width: 40vw;
+        width: 15rem;
     }
 
     .circle {
-        width: 30rem;
-        bottom: -3rem;
-        right: -4.5rem;
+        width: 20rem;
+        bottom: -1rem;
+        right: -2.5rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .bell {
-        width: 10vw;
-    }
 
     .index-wrapper {
         padding-top: 4rem;
@@ -176,13 +173,13 @@
     }
 
     .cozy-circle {
-        width: 15vw;
+        width: 15rem;
     }
 
     .circle {
         width: 18rem;
         bottom: -1.5rem;
-        right: -2.5rem;
+        right: -1.5rem;
     }
 }
 
@@ -193,7 +190,7 @@
     }
 
     .cozy-circle {
-        width: 35vw;
+        width: 22rem;
     }
 
     .circle {

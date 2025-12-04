@@ -1,5 +1,5 @@
 .loading-div {
-    width: 40vw;
+    width: 8rem;
 }
 
 .loading-cozy {
@@ -18,7 +18,7 @@
 @media (min-width: 768px) {
 
     .loading-div {
-        width: 30vw;
+        width: 12rem;
     }
 
     .loading-comment {
@@ -29,7 +29,7 @@
 @media (min-width: 1024px) {
 
     .loading-div {
-        width: 15vw;
+        width: 12rem;
     }
 
     .loading-wrapper {
@@ -44,7 +44,7 @@
 @media (min-height: 1366px) {
 
     .loading-div {
-        width: 30vw;
+        width: 17rem;
     }
 
     .loading-wrapper {

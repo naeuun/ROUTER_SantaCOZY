@@ -7,6 +7,12 @@ def index(request):
 def loading(request):
     if request.method == "POST":
         worry = request.POST.get("worry")
+
+        if not worry:
+            return render(request, "santaCozy/index.html", {
+                "error": "고민을 입력해주세요!"
+            })
+
         return render(request, "santaCozy/loading.html", {"worry": worry})
 
 def result(request):

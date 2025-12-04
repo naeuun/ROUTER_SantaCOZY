@@ -6,10 +6,12 @@
 
 <main class="wrapper loading-wrapper">
 
-    {% load static %}
-    <img class="loadingCozy" src="{% static 'img/movingCozy.gif' %}" alt="로딩 애니메이션">
+    <div class="loading-div">
+        {% load static %}
+        <img class="loading-cozy" src="{% static 'img/movingCozy.gif' %}" alt="로딩 애니메이션">
+    </div>
 
-    <h2 class="loadingComment">코지가 고민을 읽어보고 있어요..</h2>
+    <h2 class="loading-comment">코지가 고민을 읽어보고 있어요..</h2>
 
     <form id="loadingForm" method="POST" action="{% url 'santaCozy:result' %}">
         {% csrf_token %}

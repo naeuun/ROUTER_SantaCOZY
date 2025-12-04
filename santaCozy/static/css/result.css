@@ -24,6 +24,7 @@
 }
 
 .card-container {
+    width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,8 +45,8 @@
     background-repeat: no-repeat; 
     background-size: 100% auto;
     background-position: center center;
-    width: 75vw;
-    min-height: auto;
+    width: 100%;
+    height: auto;
     aspect-ratio: 3.1/4.4;
 }
 
@@ -66,7 +67,7 @@
 
 /* 150자 초과일 때 */
 .card-content p.font-size-medium {
-    font-size: 0.9rem; 
+    font-size: 0.8rem; 
 }
 
 /* 200자 초과일 때 */
@@ -95,12 +96,13 @@
     padding: 0.5rem 3rem;
     text-decoration: none;
     border-radius: var(--radius-lg);
+    text-align: center;
 }
 
 @media (min-width: 480px) {
     
-    .card-content {
-        width: 60vw;
+    .card-container {
+        width: 50vw;
     }
 
     .card-content p {
@@ -117,7 +119,7 @@
 }
 
 @media (min-width: 1024px) {
-    .card-content {
+    .card-container {
         width: 20vw;
     }
 
@@ -129,7 +131,7 @@
 }
 
 @media (min-height: 1366px) {
-    .card-content {
+    .card-container {
         width: 50vw;
     }
 

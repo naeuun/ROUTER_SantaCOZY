@@ -162,9 +162,6 @@
 }
 
 @media (min-width: 1024px) {
-    .bell {
-        width: 9rem;
-    }
 
     .index-wrapper {
         padding-top: 4rem;

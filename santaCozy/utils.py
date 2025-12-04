@@ -1,7 +1,20 @@
 import google.generativeai as genai
 from django.conf import settings
 
+"""
+class SimulationError(Exception):
+    pass
+"""
+
 def call_gemini_api(worry):
+    
+    # 429 테스트용 시뮬레이션 오류 발생
+    """
+    if "429Test" in worry:
+        raise SimulationError("429 Too Many Requests simulated error.")
+    """
+
+    
     genai.configure(api_key=settings.GEMINI_API_KEY)
 
     model = genai.GenerativeModel(

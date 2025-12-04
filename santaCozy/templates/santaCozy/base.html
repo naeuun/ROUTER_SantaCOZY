@@ -18,6 +18,11 @@
     <header></header>
     {% block content %}
     {% endblock %}
+    <script>
+        {% if error %}
+            alert("{{ error|escapejs }}");
+        {% endif %}
+    </script>
     <footer class="footer">
     <div>
         <p>Santa Cozy © 2025 — Developed by ROUTER</p>

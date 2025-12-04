@@ -1,8 +1,13 @@
-.loadingCozy {
-    width: 50vw;
+.loading-div {
+    width: 40vw;
 }
 
-.loadingComment {
+.loading-cozy {
+    width: 100%;
+    height: auto;
+}
+
+.loading-comment {
     font-family: "Bagel Fat One", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -12,18 +17,18 @@
 
 @media (min-width: 768px) {
 
-    .loadingCozy {
+    .loading-div {
         width: 30vw;
     }
 
-    .loadingComment {
+    .loading-comment {
         font-size: 1.8rem;
     }
 }
 
 @media (min-width: 1024px) {
 
-    .loadingCozy {
+    .loading-div {
         width: 15vw;
     }
 
@@ -31,19 +36,22 @@
         padding-top: 8rem;
     }
 
-    .loadingComment {
+    .loading-comment {
         font-size: 2rem;
     }
 }
 
 @media (min-height: 1366px) {
 
-    .loadingCozy {
-        width: 40vw;
-        font-size: 1.6rem;
+    .loading-div {
+        width: 30vw;
     }
 
     .loading-wrapper {
         padding-top: 20rem;
+    }
+
+    .loading-comment {
+        font-size: 2.5rem;
     }
 }

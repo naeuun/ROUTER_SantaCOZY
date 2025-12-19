@@ -18,7 +18,7 @@ def call_gemini_api(worry):
     genai.configure(api_key=settings.GEMINI_API_KEY)
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash-lite",
+        model_name="gemini-2.5-flash-lite",
         system_instruction=(
             "사용자가 입력한 고민에 대해 충고 없이 조언, 위로, 격려, 지지, 응원의 말을 해줘! "
             "고민 내용이나 학생 정보를 다시 언급하지 마."

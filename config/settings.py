@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # 그 다음에 .env 파일 로드
-load_dotenv(BASE_DIR / ".env")
+load_dotenv(BASE_DIR / ".env", override=True)
 
 # 마지막으로 환경 변수 읽기
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")

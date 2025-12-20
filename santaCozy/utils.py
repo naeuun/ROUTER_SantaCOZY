@@ -4,7 +4,7 @@ from django.conf import settings
 def call_gemini_api(worry):
     genai.configure(api_key=settings.GEMINI_API_KEY)
 
-    model = genai.GenerativeModel(model_name="models/gemma-3-12b-it")
+    model = genai.GenerativeModel(model_name="models/gemma-3-4b-it")
 
     full_prompt = (
         "지시사항: 사용자가 입력한 고민에 대해 충고 없이 조언, 위로, 격려, 지지, 응원의 말을 해줘! "
